@@ -1,0 +1,104 @@
+nav{
+    background-color: darkslateblue;
+   
+    text-align: center;
+}
+li{
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid lightblue;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+a{
+    color: lightblue;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+a:hover{
+color:black;
+background-color: aliceblue;
+}
+.forms1{
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right:50; 
+    margin-top: 100px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    
+}
+article{
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right:50; 
+    margin-top: 50px;
+    border-color: darkslateblue;
+}
+body{
+    text-align: center;
+    background-color: aliceblue;
+}
+.footerPics{
+    width: 100;
+    height: 50px;
+}
+footer{
+    border: solid ;
+border-color: darkslateblue;
+background-color:   darkslateblue;
+}
+@media screen and (max-width:800px){
+    nav{
+        width: 100%;
+    }
+    }
+    @media screen and (max-width:800px){
+        li{
+            width: 90%;
+            padding: 0%;
+        }
+        }
+        @media screen and (max-width:800px){
+            a{
+                width: 60%;
+            }
+            }
+            @media screen and (max-width:800px){
+                .forms1{
+                    width: 50%;
+                }
+                }
+                @media screen and (max-width:800px){
+                    header{
+                        width: 100%;
+                    }
+                    }
+                            @media screen and (max-width:800px){
+                                article{
+                                    width: 90%;
+                                }
+                                }
+                                @media screen and (max-width:800px){
+                                    body{
+                                        width: 100%;
+                                    }
+                                    }
+                                                @media screen and (max-width:800px){
+                                                    footer{
+                                                        width: 90%;
+                                                    }
+                                                    }
+                                                    @media screen and (max-width:800px){
+                                                        .footerPics{
+                                                            width: 20%;
+                                                        }
+                                                        }
+
+                                                

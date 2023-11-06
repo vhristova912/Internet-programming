@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesHomePage.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Начална страница</title>
+    </head>
+    <nav>
+        <ul>
+            <li>
+                <a  href="parcelsPage.html"> Парцели</a>
+            </li>
+            <li>
+                <a  href="houses.html">Къщи</a>
+            </li>
+            <li>
+                <a  href="apartmentsPage.html"> Апартаменти</a>
+            </li>
+            <li>
+                <a  href="contactsAndInfoPage.html"> Контакти и информация</a>
+            </li>
+        </ul>
+    </nav>
+   
+    <header>
+        <img class="logo" src="logo/ve-low-resolution-color-logo.png" width="50%">
+        <h1>Недвижими имоти "Victory Estate"</h1>
+        <p><em>Сайт, насочен към наем и продажба на недвижими имоти, <br>с цел бърза покупко-продажба и удобство на клиента. </em></p>
+
+    </header>
+    <body>
+        <div>
+            <img class="homePics"  src="parcelsImages/parcel1.jpg">
+            <p class="p1" ><a href="parcelsPage.html">Парцели</a></p>
+        </div>
+        <div>
+            <img class="homePics"  src="apartmentsImages/apart1.webp">
+            <p class="p1"  > <a href="apartmentsPage.html">Апартаменти</a></p>
+        </div>
+           <div>
+            <img  class="homePics" src="housesImages/house1.jpg">
+            <p class="p1"  > <a href="houses.html">Къщи</a></p>
+           </div>
+
+           <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="housesImages/houseforslideshow.jpg" style="width:100%">
+              
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="parcelsImages/parcslideshow.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="apartmentsImages/apartslideshow.jpeg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+           </div>
+           <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+       
+    </body>
+    
+    <footer>
+        <article>
+            <img class="footerPics" src="footerpics/email.png" >
+            <p>victoryestate@gmail.com</p>
+        </article>
+        <article>
+            <img class="footerPics" src="footerpics/phone.png">
+            <p>+359 89 *** ****</p>
+        </article>
+        
+       
+    </footer>
+    <script src="jsHomePage.js">
+        
+    </script>
+</html>
