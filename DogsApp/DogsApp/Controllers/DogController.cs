@@ -153,7 +153,7 @@ namespace DogsApp.Controllers
             {
                 return NotFound();
             }
-            DogEditViewModel dog = new DogEditViewModel()
+            DogDetailViewModel dog = new DogDetailViewModel()
             {
                 Id = item.Id,
                 Name = item.Name,
