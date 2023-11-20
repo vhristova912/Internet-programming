@@ -1,4 +1,5 @@
 ﻿using DogsApp.Core.Contacts;
+using DogsApp.Core.Contracts;
 using DogsApp.Infrastructure.Data;
 using DogsApp.Infrastructure.Data.Domain;
 using DogsApp.Models.Dog;
@@ -12,9 +13,11 @@ namespace DogsApp.Controllers
     public class DogController : Controller
     {
         private readonly  IDogService _dogService;
-        public DogController(IDogService dogService)
+        private readonly IBreedService _breedService;
+        public DogController(IDogService dogService, IBreedService breedService)
         {
             _dogService = dogService;
+            _breedService = breedService;
         }
         // GET: DogController
         public ActionResult Index(string searchStringBreed, string searchStringName)

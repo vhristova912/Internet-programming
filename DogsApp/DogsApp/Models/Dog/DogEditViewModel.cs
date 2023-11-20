@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+using DogsApp.Models.Breed;
+
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace DogsApp.Models.Dog
@@ -8,6 +10,7 @@ namespace DogsApp.Models.Dog
     {
         public int Id { get; set; }
         [Required]
+        [MinLength(3)]
         [MaxLength(30)]
         [Display(Name = "Name")]
         public string Name { get; set; } = null!;
@@ -17,8 +20,9 @@ namespace DogsApp.Models.Dog
         [Required]
         [MaxLength(50)]
         [Display(Name = "Breed")]
-        public string Breed { get; set; } = null!;
+        public int BreedId { get; set; }
         [Display(Name = "Dog Picture")]
         public string? Picture { get; set; }
+        public virtual List<BreedPairViewModel> Breeds { get; set; } = new List<BreedPairViewModel>();
     }
 }
