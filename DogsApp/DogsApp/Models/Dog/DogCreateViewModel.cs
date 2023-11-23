@@ -15,12 +15,13 @@ namespace DogsApp.Models.Dog
         [Range(0, 30, ErrorMessage = "Age must be between 0 and 30")]
         [Display(Name = "Age")]
         public int Age { get; set; }
-        [Required]
-        [MaxLength(50)]
+        
         [Display(Name = "Breed")]
         public int BreedId { get; set; }
+       // public string BreedName { get; set; } = null!;
         [Display(Name = "Dog picture")]
         public string? Picture { get; set; }
         public virtual List<BreedPairViewModel> Breeds { get; set; } = new List<BreedPairViewModel>();
+ 
     }
 }
